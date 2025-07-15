@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background: #575757;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    background:  #0044cc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid  #0044cc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.form-section input:focus {
+    outline: none;
+    border-color:  #0044cc;
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+.form-section button {
+    padding: 10px;
+    margin-right: 10px;
+    background:  #0044cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-section button:hover {
+    background:  #0044cc;
+}
+
+.form-section button#clearButton {
+    background: #dc3545;
+}
+
+.form-section button#clearButton:hover {
+    background: #c82333;
+}
+
+.table-section {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background:  #0044cc;
+    color: #fff;
+}

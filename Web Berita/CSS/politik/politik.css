@@ -1,0 +1,111 @@
+/* Reset dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background-color: #C9B9B3; /* Coklat susu */
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #444;
+}
+
+/* Tombol Masuk */
+.user-options .login-btn {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.user-options .login-btn:hover {
+    background-color: #ddd;
+}
+
+/* Headline Section */
+.headline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* Card Berita */
+.news-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.news-item img {
+    width: 100%;
+    height: 180px; /* tinggi tetap */
+    object-fit: cover; /* gambar akan crop rapi tanpa merusak proporsi */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.news-item p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.news-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.news-item a:hover {
+    color: #555;
+}

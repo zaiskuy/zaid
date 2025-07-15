@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <title>Halaman Pendaftaran</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Daftar Akun</h2>
+      <div class="form-group">
+         <form id="registerForm" onsubmit="handleRegister(event)">
+              <label for="nama">Nama Lengkap:</label>
+              <input type="text" id="nama" placeholder="Masukkan nama lengkap" required>
+              
+              <label for="username">Username:</label>
+              <input type="text" id="username" placeholder="Masukkan username" required>
+              
+              <label for="email">Gmail:</label>
+              <input type="email" id="email" placeholder="Masukkan Gmail" required>
+              
+              <label for="password">Password:</label>
+              <input type="password" id="password" placeholder="Masukkan password" required minlength="8">
+              
+              <div class="login-wrapper">
+                    <p>Sudah punya akun? 
+                        <a href="../HTML/Login.html">Login</a>
+                    </p>
+                    <button type="submit">Daftar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
